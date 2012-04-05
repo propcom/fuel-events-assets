@@ -40,7 +40,6 @@ $(document).ready(function () {
 	$('#form_start_time').change(function() {
 		$('#form_end_time').val($('#form_start_time').val());
 		$('#form_repeat_ends_date').datepicker( "option", "minDate",$('#form_start_time').datepicker("getDate")); //Restrict end repeating date
-		alert('in');
 	});
 
 	//Display or hide timepickers when allday is checked
